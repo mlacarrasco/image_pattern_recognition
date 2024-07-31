@@ -8,8 +8,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import imutils
 
-imgA = cv2.imread('estereo/foto_A.jpg')
-imgB = cv2.imread('estereo/foto_B.jpg')
+imgA = cv2.imread('data/estereo/foto_A.jpg')
+imgB = cv2.imread('data/estereo/foto_B.jpg')
 
 #generamos dos imágenes
 imgA = cv2.cvtColor(imgA, cv2.COLOR_BGR2RGB)
