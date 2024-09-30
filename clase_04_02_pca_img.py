@@ -64,9 +64,12 @@ img= cv2.imread('data/imagenes/coke_can.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #porcentaje de energía
-e = 0.99
+e = 0.92
 
 KLT, LOSS, B, idx, V, msg = pca(gray, e)
+print('dimension imagen:',gray.shape)
+
+
 
 plt.figure()
 plt.imshow(np.abs(LOSS), cmap='gray')
