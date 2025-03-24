@@ -17,7 +17,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from math import sin, cos, pi
+
 import numpy.matlib
+
+from skimage.measure import EllipseModel
+from matplotlib.patches import Ellipse
 
 def cambio_escala (binary, factor):
     factor_times = factor
@@ -144,6 +148,14 @@ y = np.array(y).reshape(-1,1)
 #extraemos los parámetros de la elipse
 # xc, yc, a, b, theta
 v = parametros(x, y) 
+
+print(f'parametros fitzgibon: {v}')
+
+#comparativa de parametros con modelo implementado en Skimage
+ell = EllipseModel()
+ell.estimate(contornos)
+xc, yc, a, b, theta = ell.params
+print(f'parametros Skimage: {xc, yc, a, b, theta}')
 
 #extraemos las coodenadas de la elipse
 CC = draw_ellipse(binary, v, N)

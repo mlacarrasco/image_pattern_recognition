@@ -31,10 +31,11 @@ a_points = np.array(points)
 x = a_points[:, 0]
 y = a_points[:, 1]
 
+
 ell = EllipseModel()
 ell.estimate(a_points)
-
 xc, yc, a, b, theta = ell.params
+
 
 print("centro = ",  (xc, yc))
 print("angulo de rotación = ",  theta)
