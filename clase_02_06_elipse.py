@@ -147,7 +147,7 @@ y = np.array(y).reshape(-1,1)
 
 #extraemos los parámetros de la elipse
 # xc, yc, a, b, theta
-v = parametros(x, y) 
+v = parametros(x,  y) 
 
 print(f'parametros fitzgibon: {v}')
 
