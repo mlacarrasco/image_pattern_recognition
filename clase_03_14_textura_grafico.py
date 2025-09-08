@@ -68,19 +68,19 @@ df = pd.DataFrame(F, columns=features, index=col_files)
 print(df)
 
 # preparamos los datos para el grafico
-feature_X = 'contrast'
-feature_Y = 'homogeneity'
+feature_X = 'correlation'
+feature_Y = 'energy'
 title = f'{feature_X} versus {feature_Y}'
 
 
 plt.figure()
 for i, texture_file in enumerate(df.index):
+    label =  texture_file.rsplit('_')[-1]
     plt.scatter(df[feature_X][texture_file], 
                 df[feature_Y][texture_file], 
                 marker='o', 
-                label=texture_file)
-    plt.text(df[feature_X][texture_file]+0.001,
-            df[feature_Y][texture_file]+0.001,i+1)
+                label=label)
+    plt.annotate(label, (df[feature_X][texture_file], df[feature_Y][texture_file]))
 
 plt.title(title)
 plt.xlabel(feature_X)
