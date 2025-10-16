@@ -1,7 +1,7 @@
 """
- Universidad Adolfo Ibañez
+ Universidad Diego Portales
  Facultad de Ingeniería y Ciencias
- TICS 585 - Reconocimiento de Patrones en imágenes
+ Reconocimiento de Patrones en imágenes
 
  Aplicación del algoritmo SFS para selección de características
  Autor:. Miguel Carrasco (04-08-2021)
