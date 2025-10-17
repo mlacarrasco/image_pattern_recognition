@@ -66,7 +66,7 @@ def feature_extraction(level):
     clase = np.array([1, 1, 2, 2, 2, 2, 1, 1, 1, 2, 3, 3, 3, 3, 3])
 
     # leemos todas las imagenes que cumplan el siguiente formato
-    col_dir = 'texturas_fisher/textura*.tif'
+    col_dir = 'data/texturas_fisher/textura*.tif'
     
     col = imread_collection(col_dir)  #coleccion de imágenes
     col_files = col.files
