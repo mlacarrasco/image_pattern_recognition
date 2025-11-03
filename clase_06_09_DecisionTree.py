@@ -1,7 +1,7 @@
 """
- Universidad Adolfo Ibañez
+ Universidad Diego Portales 
  Facultad de Ingeniería y Ciencias
- TICS 585 - Reconocimiento de Patrones en imágenes
+ Reconocimiento de Patrones en imágenes
 
  Ejemplo de clasificación con Árbol de Decisión
  Autor:. Miguel Carrasco (16-08-2021)

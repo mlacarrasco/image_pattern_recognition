@@ -1,5 +1,5 @@
 """
- Universidad Adolfo Ibañez
+ Universidad Diego Portales 
  Facultad de Ingeniería y Ciencias
  TICS 585 - Reconocimiento de Patrones en imágenes
 
@@ -28,10 +28,11 @@ export_graphviz(model, out_file='tree.dot',
                 rounded = True, proportion = False, 
                 precision = 2, filled = True)
 
+
 # Covierte el modelo (tree.dot) en un grafico
 call(['dot', '-Tpng', 'tree.dot', '-o', 'tree.png', '-Gdpi=600'])
 
 plt.figure(figsize = (10, 5))
 plt.imshow(plt.imread('tree.png'))
-plt.axis('off');
-plt.show();
+plt.axis('off')
+plt.show()
